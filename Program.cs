@@ -23,6 +23,8 @@ namespace ConsoleApp2
             list.Add(9);
             list.Add(10);
             List<int> list2 = list.FindAll(x => x%2 == 0);
+            int num = list2.Find(x => x > 6);
+            Console.WriteLine(num);
             foreach (int x in list2)
                 Console.WriteLine(x);
         }
